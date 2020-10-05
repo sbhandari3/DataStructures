@@ -1,0 +1,101 @@
+/* 
+ *  * Suneet Bhandari
+ *   * sugbhand
+ *    * CSE 15
+ *     * 11/16/19
+ * Dictionary.c is a program which uses linked lists to show how an online dicti
+onary works going from word to word providing definition to definition.
+ */
+
+For example if you enter
+
+int i;
+   Dictionary A;
+   char* str;
+   char* v;
+   char* k = calloc(100, sizeof(char));
+
+   // create a Dictionary and some pairs into it
+   A = newDictionary();
+   insert(A, "1","a");
+   insert(A, "2","b");
+   insert(A, "3","c");
+   insert(A, "4","d");
+   insert(A, "5","e");
+   insert(A, "6","f");
+   insert(A, "7","g");
+   
+   // print out the Dictionary
+   str = DictionaryToString(A);
+   printf("%s\n", str);
+   free(str);
+
+   // test lookup()
+   for(i=0; i<=10; i++){
+      sprintf(k, "%d", i);
+      v = lookup(A, k);
+      printf("k=%s, value=%s\n", k, v);
+   }
+   printf("\n");
+
+   // insert(A, "2","f");  // causes duplicate key error
+
+   // delete some pairs
+   delete(A, "1");
+   delete(A, "3");
+   delete(A, "7");
+
+   // print out the Dictionary
+   str = DictionaryToString(A);
+   printf("%s\n", str);
+   free(str);
+
+   // delete(A, "7");  // causes key not found error
+
+   // check size
+   printf("size(A) = %d\n", size(A));
+
+   // make A empty, check size, print it out
+   makeEmpty(A);
+   printf("size(A) = %d\n", size(A));
+   str = DictionaryToString(A);
+   printf("%s\n", str);
+   free(str);
+
+   // free everything
+   free(k);
+   freeDictionary(&A);
+
+   return EXIT_SUCCESS;
+}
+ 
+
+the output would be,
+
+
+1 a
+2 b
+3 c
+4 d
+5 e
+6 f
+7 g
+
+k=0, value=(null)
+k=1, value=a
+k=2, value=b
+k=3, value=c
+k=4, value=d
+k=5, value=e
+k=6, value=f
+k=7, value=g
+k=8, value=(null)
+k=9, value=(null)
+k=10, value=(null)
+
+2 b
+4 d
+5 e
+6 f
+
+size(A) = 4

@@ -1,0 +1,19 @@
+Suneet Bhandari, sugbhand, CSE 15, 10.29.2019
+
+This is my README file which briefly describes what my program does and how it
+works.
+
+The files I have included in the turn in are README, Makefile, and S.c
+
+For pa2, I used recursion to find all the solutions to how many Queens I can have on an n-sized board, needing n amount of Queens.
+
+For example if the input is Queens 4, the output of my program would be,
+
+4-Queens has 2 solutions.
+
+If the input is "Queens -v 4", the output is,
+
+(2, 4, 1, 3)
+(3, 1, 4, 2)
+4-Queens has 2 solutions.
+

@@ -1,0 +1,23 @@
+Suneet Bhandari
+sugbhand
+CSE 15
+10.20.19
+
+This README file shows how to run lab2 and what is contained in it.
+
+The files included are:
+README, Makefile, charType.c
+
+In this lab, we printed out the alphabets, digits, punctuation marks, and whitespaces. We allocated memory using calloc.
+
+For example, 
+
+An input file may include,
+Suneet Bhandari 123 !!!
+
+The example output would be,
+Line 1 contains:
+14 alphabetic characters: SuneetBhandari
+3 numeric characters: 124
+3 punctuation characters: !!!
+2 whitespace characters:  

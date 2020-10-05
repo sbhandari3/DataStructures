@@ -1,0 +1,10 @@
+ Suneet Bhandari
+ sugbhand
+ CSE 15
+ 11/06/19
+
+ This is a README file which tells what my lab IntegerStack.c does.
+
+ IntegerStack.c is a program in C which takes a file an uses ADT in C. There are a series of functions used to show how a ADT is used seen when an input file is inputted.
+
+ It contains IntegerStack.c, IntegerStack.h, IntegerStackTest.h, and a Makefile which allows my code to run with a file inputted.

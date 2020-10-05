@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------------------
+// Suneet Bhandari
+// sugbhand
+// 12/04/19
+// SortStrings.c is a lab that takes strings from a file and sorts them alphabetically.
+
+for example, if the file read
+6
+happy
+sad
+foo
+bar
+aware
+igloo
+
+the output would be 
+aware
+bar
+foo
+happy
+igloo
+sad
+
+The number represents the number of words in the file.
